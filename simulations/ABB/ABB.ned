@@ -21,7 +21,7 @@ import inet.node.tsn.TsnSwitch;
 import inet.node.tsn.TsnClock;
 import inet.node.ethernet.Eth1G;
 
-network topology extends TsnNetworkBase
+network ABB extends TsnNetworkBase
 {
     parameters:
         @display("bgb=1280,720");
