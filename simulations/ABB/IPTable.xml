@@ -1,0 +1,5 @@
+<config>
+	<interface hosts="ES400" address="10.0.0.x"/>
+	<interface hosts="ES418" address="10.0.1.x"/>
+	<route hosts="ES400" destination="ES418" interface="eth1" netmask="255.255.255.255" metric="0"/>
+</config>
