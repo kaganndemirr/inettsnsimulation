@@ -36,7 +36,7 @@ network ORION extends TsnNetworkBase
             @display("p=1427,204;i=device/switch");
         }
         SW_27: TsnSwitch {
-            @display("p=1427,398;i=device/switch");
+            @display("p=1427,382;i=device/switch");
         }
         SW_31: TsnSwitch {
             @display("p=1427,542;i=device/switch");
