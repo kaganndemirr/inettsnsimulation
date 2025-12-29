@@ -1,11 +1,11 @@
-package simulations.TezOneriLFA4ES;
+package simulations.TezOneriLFA5ES;
 
 import inet.networks.base.TsnNetworkBase;
 import inet.node.tsn.TsnDevice;
 import inet.node.tsn.TsnSwitch;
 import inet.node.ethernet.Eth1G;
 
-network TezOneriLFA4ES extends TsnNetworkBase
+network TezOneriLFA5ES extends TsnNetworkBase
 {
     parameters:
         @display("bgb=1280,720");
@@ -42,15 +42,15 @@ network TezOneriLFA4ES extends TsnNetworkBase
             @display("p=912,636;i=device/pc");
         }
     connections:
-        ES_0.ethg[0] <--> Eth1G <--> SW_0.ethg[0];
-		SW_0.ethg[1] <--> Eth1G <--> SW_1.ethg[0];
-		SW_0.ethg[2] <--> Eth1G <--> SW_4.ethg[0];
-		SW_4.ethg[1] <--> Eth1G <--> SW_2.ethg[0];
-		SW_2.ethg[1] <--> Eth1G <--> SW_3.ethg[0];
-		SW_1.ethg[1] <--> Eth1G <--> SW_3.ethg[1];
-		SW_0.ethg[3] <--> Eth1G <--> SW_2.ethg[2];
-		SW_2.ethg[3] <--> Eth1G <--> ES_1.ethg[0];
-		SW_4.ethg[2] <--> Eth1G <--> ES_2.ethg[0];
-		SW_1.ethg[2] <--> Eth1G <--> ES_3.ethg[0];
-		SW_3.ethg[2] <--> Eth1G <--> ES_4.ethg[0];
+        ES_0.ethg++ <--> Eth1G <--> SW_0.ethg++;
+		SW_0.ethg++ <--> Eth1G <--> SW_1.ethg++;
+		SW_0.ethg++ <--> Eth1G <--> SW_4.ethg++;
+		SW_4.ethg++ <--> Eth1G <--> SW_2.ethg++;
+		SW_2.ethg++ <--> Eth1G <--> SW_3.ethg++;
+		SW_1.ethg++ <--> Eth1G <--> SW_3.ethg++;
+		SW_0.ethg++ <--> Eth1G <--> SW_2.ethg++;
+		SW_2.ethg++ <--> Eth1G <--> ES_1.ethg++;
+		SW_4.ethg++ <--> Eth1G <--> ES_2.ethg++;
+		SW_1.ethg++ <--> Eth1G <--> ES_3.ethg++;
+		SW_3.ethg++ <--> Eth1G <--> ES_4.ethg++;
 }
