@@ -5,3 +5,5 @@
 results
 Makefile
 .qtenvrc
+/simulations/*/*/results
+/simulations/*/*/General.anf

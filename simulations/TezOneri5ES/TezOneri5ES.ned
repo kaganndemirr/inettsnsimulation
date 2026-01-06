@@ -1,11 +1,11 @@
-package simulations.TezOneriLFA5ES;
+package simulations.TezOneri5ES;
 
 import inet.networks.base.TsnNetworkBase;
 import inet.node.tsn.TsnDevice;
 import inet.node.tsn.TsnSwitch;
 import inet.node.ethernet.Eth1G;
 
-network TezOneriLFA5ES extends TsnNetworkBase
+network TezOneri5ES extends TsnNetworkBase
 {
     parameters:
         @display("bgb=1280,720");
